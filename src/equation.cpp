@@ -12,3 +12,20 @@ double Equation::differentialEquation2(double x, double y){
 double Equation::differentialEquation3(double x, double y){
     return y-x*x+1;
 }
+
+
+double Equation::harmonicOscillator(double x, double y) {
+    return -y;  
+}
+
+double Equation::exponentialGrowth(double x, double y) {
+    return y;  
+}
+
+double Equation::logisticGrowth(double x, double y) {
+    return y * (1 - y);  
+}
+
+double Equation::pendulum(double x, double y) {
+    return std::sin(y);  
+}
