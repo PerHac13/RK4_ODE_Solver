@@ -8,3 +8,7 @@ double Equation::differentialEquation1(double x, double y){
 double Equation::differentialEquation2(double x, double y){
     return 2*y-x*x+1;
 }
+
+double Equation::differentialEquation3(double x, double y){
+    return y-x*x+1;
+}
