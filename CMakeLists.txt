@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-file(GLOB SOURCES "src/*.cpp)
+file(GLOB SOURCES "src/*.cpp")
 
-add_executable(${project} ${SOURCES})
+add_executable(RK4Solver ${SOURCES})
 
 find_package(Threads REQUIRED)
-target_link_libraries(RK4Solver Threads::Threads)
+target_link_libraries(RK4Solver PRIVATE Threads::Threads)
